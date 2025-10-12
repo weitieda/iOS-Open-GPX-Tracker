@@ -16,6 +16,11 @@
 		4588D66F230D2476009AA75F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4588D671230D2476009AA75F /* InfoPlist.strings */; };
 		45A430E9230D61240003C2F2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A430EB230D61240003C2F2 /* Interface.storyboard */; };
 		836B1BAD2E7DC69900285130 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B1BAC2E7DC69900285130 /* ViewControllerTests.swift */; };
+		83C479EF2E9C2A1B00182941 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = GHI12345678901234567890 /* CoreGPX */; };
+		83C479F02E9C2A1B00182941 /* MapCache in Frameworks */ = {isa = PBXBuildFile; productRef = JKL12345678901234567890 /* MapCache */; };
+		83C479F12E9C2A1B00182941 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = STU12345678901234567890 /* CoreGPX */; };
+		83C479F22E9C2A1B00182941 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = MNO12345678901234567890 /* CoreGPX */; };
+		83C479F32E9C2A1B00182941 /* MapCache in Frameworks */ = {isa = PBXBuildFile; productRef = PQR12345678901234567890 /* MapCache */; };
 		8913CD8C1BDB0A9A009EC729 /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913CD8B1BDB0A9A009EC729 /* PreferencesTableViewController.swift */; };
 		8913CD8E1BDB2477009EC729 /* PreferencesTableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913CD8D1BDB2477009EC729 /* PreferencesTableViewControllerDelegate.swift */; };
 		893BEC8619C7E62200C77354 /* GPXWaypoint+MKAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BEC8519C7E62200C77354 /* GPXWaypoint+MKAnnotation.swift */; };
@@ -95,53 +100,6 @@
 		DC4908A11C4A136F009484AE /* TrackerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4908A01C4A136F009484AE /* TrackerButton.swift */; };
 		DC4908A31C4A332E009484AE /* MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4908A21C4A332E009484AE /* MapViewDelegate.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		ABC12345678901234567890 /* XCRemoteSwiftPackageReference "CoreGPX" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/vincentneo/CoreGPX.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.1;
-			};
-		};
-		DEF12345678901234567890 /* XCRemoteSwiftPackageReference "MapCache" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/vincentneo/MapCache.git";
-			requirement = {
-				kind = branch;
-				branch = master;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		GHI12345678901234567890 /* CoreGPX */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ABC12345678901234567890 /* XCRemoteSwiftPackageReference "CoreGPX" */;
-			productName = CoreGPX;
-		};
-		JKL12345678901234567890 /* MapCache */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DEF12345678901234567890 /* XCRemoteSwiftPackageReference "MapCache" */;
-			productName = MapCache;
-		};
-		MNO12345678901234567890 /* CoreGPX */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ABC12345678901234567890 /* XCRemoteSwiftPackageReference "CoreGPX" */;
-			productName = CoreGPX;
-		};
-		PQR12345678901234567890 /* MapCache */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DEF12345678901234567890 /* XCRemoteSwiftPackageReference "MapCache" */;
-			productName = MapCache;
-		};
-		STU12345678901234567890 /* CoreGPX */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ABC12345678901234567890 /* XCRemoteSwiftPackageReference "CoreGPX" */;
-			productName = CoreGPX;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin PBXContainerItemProxy section */
 		898EECEE19C49B5800B4B207 /* PBXContainerItemProxy */ = {
@@ -327,6 +285,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C479F02E9C2A1B00182941 /* MapCache in Frameworks */,
+				83C479EF2E9C2A1B00182941 /* CoreGPX in Frameworks */,
 				BF637D132216C5FA0003EC04 /* WatchConnectivity.framework in Frameworks */,
 				899D678419D3528D00C88A0A /* WebKit.framework in Frameworks */,
 				899D677819CF0A9F00C88A0A /* MessageUI.framework in Frameworks */,
@@ -339,6 +299,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C479F32E9C2A1B00182941 /* MapCache in Frameworks */,
+				83C479F22E9C2A1B00182941 /* CoreGPX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +308,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C479F12E9C2A1B00182941 /* CoreGPX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,6 +659,10 @@
 				it,
 			);
 			mainGroup = 898EECCC19C49B5800B4B207;
+			packageReferences = (
+				ABC12345678901234567890 /* XCRemoteSwiftPackageReference "CoreGPX" */,
+				DEF12345678901234567890 /* XCRemoteSwiftPackageReference "MapCache" */,
+			);
 			productRefGroup = 898EECD619C49B5800B4B207 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -704,10 +671,6 @@
 				898EECEC19C49B5800B4B207 /* OpenGpxTrackerTests */,
 				BF692F562209AAF900F8A0F1 /* OpenGpxTracker-Watch */,
 				BF692F622209AAFB00F8A0F1 /* OpenGpxTracker-Watch Extension */,
-			);
-			packageReferences = (
-				ABC12345678901234567890 /* XCRemoteSwiftPackageReference "CoreGPX" */,
-				DEF12345678901234567890 /* XCRemoteSwiftPackageReference "MapCache" */,
 			);
 		};
 /* End PBXProject section */
@@ -1365,6 +1328,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ABC12345678901234567890 /* XCRemoteSwiftPackageReference "CoreGPX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vincentneo/CoreGPX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.1;
+			};
+		};
+		DEF12345678901234567890 /* XCRemoteSwiftPackageReference "MapCache" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vincentneo/MapCache.git";
+			requirement = {
+				kind = branch;
+				branch = master;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		GHI12345678901234567890 /* CoreGPX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABC12345678901234567890 /* XCRemoteSwiftPackageReference "CoreGPX" */;
+			productName = CoreGPX;
+		};
+		JKL12345678901234567890 /* MapCache */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF12345678901234567890 /* XCRemoteSwiftPackageReference "MapCache" */;
+			productName = MapCache;
+		};
+		MNO12345678901234567890 /* CoreGPX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABC12345678901234567890 /* XCRemoteSwiftPackageReference "CoreGPX" */;
+			productName = CoreGPX;
+		};
+		PQR12345678901234567890 /* MapCache */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF12345678901234567890 /* XCRemoteSwiftPackageReference "MapCache" */;
+			productName = MapCache;
+		};
+		STU12345678901234567890 /* CoreGPX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABC12345678901234567890 /* XCRemoteSwiftPackageReference "CoreGPX" */;
+			productName = CoreGPX;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		898EECDC19C49B5800B4B207 /* OpenGpxTracker.xcdatamodeld */ = {
