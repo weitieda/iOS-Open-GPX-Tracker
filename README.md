@@ -69,15 +69,13 @@ Open GPX tracker supports language translations (since 1.7.0). [See list of supp
 
 ## Development
 
-This application is written in Swift. To download the code run this command in a console:
+This application is written in Swift. To download the code, run this command in a console:
 
 ```
  git clone https://github.com/merlos/iOS-Open-GPX-Tracker.git
 ```
 
-Then, to test it open the file `OpenGpxTracker.xcworkspace` with XCode.
-
-Although the application uses some Cocoapods, all the pods are already included in our repo. So no need to run `pod install`.
+Open it in `Xcode` and wait for `Swift Package Manager` to resolve all the dependency packages.
 
 Please note the [limitations of using OpenStreetMap Tile Servers](http://wiki.openstreetmap.org/wiki/Tile_usage_policy)
 
